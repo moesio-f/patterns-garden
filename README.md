@@ -12,9 +12,9 @@
 
 ## Creational Patterns
 
-|  |  |  |
-| --- | --- | --- |
-|  <p align='center'><img height='200px' src='https://raw.githubusercontent.com/moesio-f/patterns-garden/refs/heads/main/.github/images/abstract_factory.svg'/></p><p>Abstract Factory Pattern<sup>\[1\]</sup></p>| | |
+|  |
+| --- |
+|  <p align='center'><img height='200px' src='https://raw.githubusercontent.com/moesio-f/patterns-garden/refs/heads/main/.github/images/abstract_factory.svg'/></p><p>Abstract Factory Pattern<sup>\[1\]</sup></p><p>[Python](./python/creational/abstract_factory.py)</p> |
 
 > **References**
 >
