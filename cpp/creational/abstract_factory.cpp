@@ -132,13 +132,15 @@ int main() {
   srand(time(NULL));
 
   // Select runtime factory
-  SampleFactory factory = SampleFactory(rand() % 2 == 0 ? "Windows" : "POSIX");
+  unique_ptr<AbstractFactory> factory =
+      make_unique<SampleFactory>(rand() % 2 == 0 ? "Windows" : "POSIX");
 
   // Create instances
-  AbstractOutput &stdout = factory.stdout();
+  AbstractOutput &stdout = factory->stdout();
   unique_ptr<AbstractProcess> processes[3] = {
-      factory.create_process("git status"), factory.create_process("git add ."),
-      factory.create_process("git diff HEAD")};
+      factory->create_process("git status"),
+      factory->create_process("git add ."),
+      factory->create_process("git diff HEAD")};
 
   // Inspecting processes
   for (int i = 0; i < 3; i++) {
