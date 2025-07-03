@@ -143,8 +143,7 @@ int main() {
       factory->create_process("git diff HEAD")};
 
   // Inspecting processes
-  for (int i = 0; i < 3; i++) {
-    unique_ptr<AbstractProcess> &proc = processes[i];
+  for (auto &proc : processes) {
     sprintf(msg, "Starting process with PID=%d and command='%s'.", proc->id(),
             proc->command.c_str());
     stdout.write(msg);
@@ -156,8 +155,7 @@ int main() {
   }
 
   // Are all processes finished?
-  for (int i = 0; i < 3; i++) {
-    unique_ptr<AbstractProcess> &proc = processes[i];
+  for (auto &proc : processes) {
     sprintf(msg, "Process with PID=%d is %s.", proc->id(),
             proc->is_running() ? "running" : "finished");
     stdout.write(msg);
@@ -165,8 +163,7 @@ int main() {
 
   // Wait for any unfinished process
   stdout.write("Waiting for all processes to finish...");
-  for (int i = 0; i < 3; i++) {
-    unique_ptr<AbstractProcess> &proc = processes[i];
+  for (auto &proc : processes) {
     proc->join();
   }
   stdout.write("Done!");
