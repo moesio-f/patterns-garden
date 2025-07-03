@@ -42,6 +42,7 @@
 *.su
 *.idb
 *.pdb
+*.ccls-cache/
 
 # Kernel Module Compile Results
 *.mod*
