@@ -1,4 +1,21 @@
-default: ;
+# Utilities
+define run_c
+    $(eval $@_FNAME = $(1))
+    gcc -lm "${$@_FNAME}"
+	./a.out
+	rm ./a.out
+endef
+
+define run_cpp
+    $(eval $@_FNAME = $(1))
+    g++ "${$@_FNAME}"
+	./a.out
+	rm ./a.out
+endef
+
+default: 
+	@echo "[Makefile] Run samples using {python,c,cpp,java}-{design_pattern_name}"
+	@rm -f *.out
 
 python-abstract-factory:
 	@echo "[Makefile] Running Python Abstract Factory Pattern sample..."
@@ -6,12 +23,8 @@ python-abstract-factory:
 
 c-abstract-factory:
 	@echo "[Makefile] Running C Abstract Factory Pattern sample..."
-	@gcc -lm ./c/creational/abstract_factory.c
-	@./a.out
-	@rm ./a.out
+	@$(call run_c,"./c/creational/abstract_factory.c")
 
 cpp-abstract-factory:
 	@echo "[Makefile] Running C++ Abstract Factory Pattern sample..."
-	@g++ ./cpp/creational/abstract_factory.cpp
-	@./a.out
-	@rm ./a.out
+	@$(call run_cpp,"./cpp/creational/abstract_factory.cpp")
