@@ -9,3 +9,9 @@ c-abstract-factory:
 	@gcc -lm ./c/creational/abstract_factory.c
 	@./a.out
 	@rm ./a.out
+
+cpp-abstract-factory:
+	@echo "[Makefile] Running C++ Abstract Factory Pattern sample..."
+	@g++ ./cpp/creational/abstract_factory.cpp
+	@./a.out
+	@rm ./a.out
