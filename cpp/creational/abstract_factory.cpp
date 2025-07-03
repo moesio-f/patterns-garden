@@ -74,7 +74,7 @@ private:
   AbstractOutput &stdout;
   time_t start_t;
 
-  int runtime() { return floor(difftime(time(NULL), this->start_t)); }
+  int runtime() { return floor(difftime(time(nullptr), this->start_t)); }
 
 public:
   SampleProcess(string command, int id, AbstractOutput &stdout)
@@ -92,7 +92,7 @@ public:
             "[PID %d] Process started with command '%s'. ETA of %d seconds.",
             this->id_, this->command.c_str(), this->duration);
     this->stdout.write(msg);
-    this->start_t = time(NULL);
+    this->start_t = time(nullptr);
   }
 
   int id() override { return this->id_; }
@@ -129,7 +129,7 @@ public:
 int main() {
   // Initialize RNG and msg buffer
   char msg[512];
-  srand(time(NULL));
+  srand(time(nullptr));
 
   // Select runtime factory
   unique_ptr<AbstractFactory> factory =
