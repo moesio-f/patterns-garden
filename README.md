@@ -12,9 +12,10 @@
 
 ## Creational Patterns
 
-|  |
-| --- |
-|  <p align='center'><img height='200px' src='https://raw.githubusercontent.com/moesio-f/patterns-garden/refs/heads/main/.github/images/abstract_factory.svg'/></p><p align='center'>Abstract Factory Pattern<sup>\[1\]</sup></p><p align='center'>[C](./c/creational/abstract_factory.c), [C++](./cpp/creational/abstract_factory.cpp), [Java](./java/creational/AbstractFactory.java), [Python](./python/creational/abstract_factory.py)</p> |
+| | |
+| --- | --- |
+|  <p align='center'><img height='200px' src='https://raw.githubusercontent.com/moesio-f/patterns-garden/refs/heads/main/.github/images/abstract_factory.svg'/></p><p align='center'>Abstract Factory Pattern<sup>\[1\]</sup></p><p align='center'>[C](./c/creational/abstract_factory.c), [C++](./cpp/creational/abstract_factory.cpp), [Java](./java/creational/AbstractFactory.java), [Python](./python/creational/abstract_factory.py)</p> |  <p align='center'><img height='200px' src='https://raw.githubusercontent.com/moesio-f/patterns-garden/refs/heads/main/.github/images/builder.svg'/></p><p align='center'>Builder Pattern<sup>\[1\]</sup></p><p align='center'></p> |
+
 
 > **References**
 >
