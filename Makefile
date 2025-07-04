@@ -13,6 +13,14 @@ define run_cpp
 	rm ./a.out
 endef
 
+define run_java
+    $(eval $@_FNAME = $(1))
+    javac "${$@_FNAME}" -d .
+	java Main
+	rm *.class
+endef
+
+
 default: 
 	@echo "[Makefile] Run samples using {python,c,cpp,java}-{design_pattern_name}"
 	@rm -f *.out
@@ -28,3 +36,7 @@ c-abstract-factory:
 cpp-abstract-factory:
 	@echo "[Makefile] Running C++ Abstract Factory Pattern sample..."
 	@$(call run_cpp,"./cpp/creational/abstract_factory.cpp")
+
+java-abstract-factory:
+	@echo "[Makefile] Running Java Abstract Factory Pattern sample..."
+	@$(call run_java,"./java/creational/AbstractFactory.java")
