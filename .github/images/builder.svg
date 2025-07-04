@@ -25,13 +25,13 @@
      inkscape:document-units="mm"
      inkscape:zoom="4.2381568"
      inkscape:cx="21.825526"
-     inkscape:cy="90.015547"
+     inkscape:cy="90.015546"
      inkscape:window-width="1920"
      inkscape:window-height="1052"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer2" />
   <defs
      id="defs1">
     <marker
@@ -71,6 +71,18 @@
        only_selected="false"
        hide_knots="false" />
   </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Base">
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.201753;stroke-linecap:square;stroke-opacity:1"
+       id="rect2"
+       width="32.077415"
+       height="32.077415"
+       x="0.10087637"
+       y="0.10087637" />
+  </g>
   <g
      inkscape:label="Shapes"
      inkscape:groupmode="layer"
