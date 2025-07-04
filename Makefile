@@ -24,10 +24,15 @@ endef
 default: 
 	@echo "[Makefile] Run samples using {python,c,cpp,java}-{design_pattern_name}"
 	@rm -f *.out
+	@rm -f *.class
 
 python-abstract-factory:
 	@echo "[Makefile] Running Python Abstract Factory Pattern sample..."
 	@python ./python/creational/abstract_factory.py
+
+python-builder:
+	@echo "[Makefile] Running Python Builder Pattern sample..."
+	@python ./python/creational/builder.py
 
 c-abstract-factory:
 	@echo "[Makefile] Running C Abstract Factory Pattern sample..."
