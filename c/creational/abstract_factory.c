@@ -180,5 +180,14 @@ int main() {
   }
   stdout->write("Done!");
 
+  // Free memory
+  free(factory);
+  free(stdout);
+  for (int i = 0; i < 3; i++) {
+    AbstractProcess *proc = processes[i];
+    free(proc->self);
+    free(proc);
+  }
+
   return 0;
 }

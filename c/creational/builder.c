@@ -1,14 +1,11 @@
-/* Abstract Factory Pattern.
- *
- *
- * Builder Pattern.
+/* Builder Pattern.
  *
  * > Separate the construction of a
  * > complex object from its
  * > representation so that the same
  * > construction process can create
  * > different representations
- &
+ *
  * This sample uses the pattern on the following
  * context:
  *    - A Neural Network is a computational model
@@ -21,11 +18,9 @@
  *        network can be called as a function;
  * */
 #include <math.h>
-#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <unistd.h>
 
 // === Utility functions ===
 double randomf(double a, double b) {
@@ -34,7 +29,6 @@ double randomf(double a, double b) {
 }
 
 // === Generic Array container ===
-
 typedef struct {
   void *arr;
   int n;
