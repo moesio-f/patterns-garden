@@ -101,7 +101,7 @@ class Layer:
             for param in neuron.parameters + [neuron.bias]
         ]
 
-    def intialize(self):
+    def initialize(self):
         for n in self._neurons:
             n.init(
                 [random.uniform(-1, 1) for _ in range(self._input)],
@@ -113,7 +113,7 @@ class Layer:
 
     def __str__(self) -> str:
         return (
-            f"Linear(n_input={self._input}, "
+            f"Layer(n_input={self._input}, "
             f"n_output={self._output}, "
             f"parameters={len(self.parameters())}, "
             f"activation={self._activation.name})"
@@ -152,7 +152,7 @@ class NeuralNetwork:
 
     def initialize(self):
         for l in self.layers:
-            l.intialize()
+            l.initialize()
 
     def __call__(self, x: list[float]) -> list[float]:
         for l in self.layers:
