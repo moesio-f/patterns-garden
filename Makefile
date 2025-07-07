@@ -34,6 +34,10 @@ python-builder:
 	@echo "[Makefile] Running Python Builder Pattern sample..."
 	@python ./python/creational/builder.py
 
+python-factory-method:
+	@echo "[Makefile] Running Python Factory Method Pattern sample..."
+	@python ./python/creational/factory_method.py
+
 c-abstract-factory:
 	@echo "[Makefile] Running C Abstract Factory Pattern sample..."
 	@$(call run_c,"./c/creational/abstract_factory.c")
