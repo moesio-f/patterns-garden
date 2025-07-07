@@ -55,7 +55,7 @@ typedef struct Neuron {
 void neuron_initialize(Neuron *neuron) {
   double *parameters = (double *)neuron->parameters->arr;
   for (int i = 0; i < neuron->parameters->n; i++) {
-    parameters[i] = randomf(-1.0f, 1.0f);
+    parameters[i] = randomf(-1.0, 1.0);
   }
 }
 
@@ -393,7 +393,7 @@ int main() {
   printf("Total parameters: %d\n", network->parameters->n);
   printf("====================\n");
 
-  // Test sine random values
+  // Test some random values
   for (int i = 0; i < 10; i++) {
     // Get random array
     Array *x = malloc(sizeof(Array));
