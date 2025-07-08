@@ -106,7 +106,7 @@ public:
   }
 };
 
-template <typename T> void test_processor(SumProcessor<T> &processor) {
+void test_processor(AbstractProcessor &processor) {
   for (int i = 0; i < 10; i++) {
     bool use_sum_event = random() % 2 == 0;
     char event[512] = "";
