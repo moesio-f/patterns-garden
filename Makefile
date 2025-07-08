@@ -38,6 +38,10 @@ python-factory-method:
 	@echo "[Makefile] Running Python Factory Method Pattern sample..."
 	@python ./python/creational/factory_method.py
 
+python-prototype:
+	@echo "[Makefile] Running Python Prototype Pattern sample..."
+	@python ./python/creational/prototype.py
+
 c-abstract-factory:
 	@echo "[Makefile] Running C Abstract Factory Pattern sample..."
 	@$(call run_c,"./c/creational/abstract_factory.c")
@@ -57,6 +61,10 @@ cpp-builder:
 cpp-factory-method:
 	@echo "[Makefile] Running C++ Factory Method Pattern sample..."
 	@$(call run_cpp,"./cpp/creational/factory_method.cpp")
+
+cpp-prototype:
+	@echo "[Makefile] Running C++ Prototype Pattern sample..."
+	@$(call run_cpp,"./cpp/creational/prototype.cpp")
 
 java-abstract-factory:
 	@echo "[Makefile] Running Java Abstract Factory Pattern sample..."
