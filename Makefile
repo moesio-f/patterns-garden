@@ -54,6 +54,10 @@ cpp-builder:
 	@echo "[Makefile] Running C++ Builder Pattern sample..."
 	@$(call run_cpp,"./cpp/creational/builder.cpp")
 
+cpp-factory-method:
+	@echo "[Makefile] Running C++ Factory Method Pattern sample..."
+	@$(call run_cpp,"./cpp/creational/factory_method.cpp")
+
 java-abstract-factory:
 	@echo "[Makefile] Running Java Abstract Factory Pattern sample..."
 	@$(call run_java,"./java/creational/AbstractFactory.java")
