@@ -20,4 +20,5 @@
 > **References**
 >
 > \[1\]: Gamma, E., Helm, R., Johnson, R., & Vlissides, J. (1994). **Design patterns: Elements of Reusable Object-Oriented Software**.
+> 
 > \[2\]: **Object pool pattern**. https://en.wikipedia.org/wiki/Object_pool_pattern
