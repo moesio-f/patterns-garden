@@ -42,6 +42,10 @@ python-prototype:
 	@echo "[Makefile] Running Python Prototype Pattern sample..."
 	@python ./python/creational/prototype.py
 
+python-object-pool:
+	@echo "[Makefile] Running Python Object Pool Patter sample..."
+	@python ./python/creational/object_pool.py
+
 c-abstract-factory:
 	@echo "[Makefile] Running C Abstract Factory Pattern sample..."
 	@$(call run_c,"./c/creational/abstract_factory.c")
@@ -65,6 +69,10 @@ cpp-factory-method:
 cpp-prototype:
 	@echo "[Makefile] Running C++ Prototype Pattern sample..."
 	@$(call run_cpp,"./cpp/creational/prototype.cpp")
+
+cpp-object-pool:
+	@echo "[Makefile] Running C++ Object Pool Pattern sample..."
+	@$(call run_cpp,"./cpp/creational/object_pool.cpp")
 
 java-abstract-factory:
 	@echo "[Makefile] Running Java Abstract Factory Pattern sample..."
