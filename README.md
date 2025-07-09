@@ -21,7 +21,7 @@
 
 | | | | |
 | --- | --- | --- | --- |
-| <p align='center'>Adapter Pattern<sup>\[1\]</sup></p><p align='center'>[C++](./cpp/structural/adapter.cpp)</p> | <p align='center'>Bridge Pattern<sup>\[1\], \[3\]</sup></p><p align='center'>[C++](./cpp/structural/bridge.cpp)</p> |
+| <p align='center'>Adapter Pattern<sup>\[1\]</sup></p><p align='center'>[C++](./cpp/structural/adapter.cpp), [Python](./python/structural/adapter.py)</p> | <p align='center'>Bridge Pattern<sup>\[1\], \[3\]</sup></p><p align='center'>[C++](./cpp/structural/bridge.cpp)</p> |
 
 --- 
 
