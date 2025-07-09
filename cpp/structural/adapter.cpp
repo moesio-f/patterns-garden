@@ -18,13 +18,9 @@
 #include <algorithm>
 #include <iostream>
 #include <memory>
+#include <type_traits>
 #include <vector>
 using namespace std;
-
-// === Utilities ===
-struct Runtime_error {
-  string message;
-};
 
 /*
  * Numeric model interface.

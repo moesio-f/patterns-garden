@@ -82,6 +82,10 @@ cpp-adapter:
 	@echo "[Makefile] Running C++ Adapter Pattern sample..."
 	@$(call run_cpp,"./cpp/structural/adapter.cpp")
 
+cpp-bridge:
+	@echo "[Makefile] Running C++ Bridge Pattern sample..."
+	@$(call run_cpp,"./cpp/structural/bridge.cpp")
+
 java-abstract-factory:
 	@echo "[Makefile] Running Java Abstract Factory Pattern sample..."
 	@$(call run_java,"./java/creational/AbstractFactory.java")
