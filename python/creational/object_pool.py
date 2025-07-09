@@ -19,10 +19,10 @@ context:
         of time on each call;
 """
 
-import time
-from typing import Generic, TypeVar
 import random
+import time
 from abc import ABC, abstractmethod
+from typing import Generic, TypeVar
 
 T = TypeVar("T")
 K = TypeVar("K")

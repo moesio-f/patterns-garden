@@ -16,9 +16,9 @@ context:
         accordingly;
 """
 
-import string
 import random
 import re
+import string
 from abc import ABC, abstractmethod
 
 

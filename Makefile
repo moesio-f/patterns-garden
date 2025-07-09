@@ -43,8 +43,12 @@ python-prototype:
 	@python ./python/creational/prototype.py
 
 python-object-pool:
-	@echo "[Makefile] Running Python Object Pool Patter sample..."
+	@echo "[Makefile] Running Python Object Pool Pattern sample..."
 	@python ./python/creational/object_pool.py
+
+python-adapter:
+	@echo "[Makefile] Running Python Adapter Pattern sample..."
+	@python ./python/structural/adapter.py
 
 c-abstract-factory:
 	@echo "[Makefile] Running C Abstract Factory Pattern sample..."
