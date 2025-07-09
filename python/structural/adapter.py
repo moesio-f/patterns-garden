@@ -51,12 +51,15 @@ class AdapterLibraryA(Model[T]):
         #   store whatever is needed
         #   to implement fit+predict.
         del obj
+        self._max = 0
+        self._min = 0
 
     def fit(self, x: list[list[T]], y: list[int]):
-        pass
+        self._max = max(y)
+        self._min = min(y)
 
     def predict(self, x: list[list[T]]) -> list[int]:
-        return [int(max(x_)) for x_ in x]
+        return [min(self._max, max(self._min, int(max(x_)))) for x_ in x]
 
 
 class AdapterLibraryB(Model[T]):
@@ -69,20 +72,24 @@ class AdapterLibraryB(Model[T]):
         del obj
 
     def fit(self, x: list[list[T]], y: list[int]):
-        pass
+        self._max = max(y)
+        self._min = min(y)
 
     def predict(self, x: list[list[T]]) -> list[int]:
-        return [int(min(x_)) for x_ in x]
+        return [min(self._max, max(self._min, int(min(x_)))) for x_ in x]
 
 
 if __name__ == "__main__":
     # Get adapted versions of objects
     model_from_a = AdapterLibraryA[int](None)
-    model_from_b = AdapterLibraryB[float](None)
+    model_from_b = AdapterLibraryB[int](None)
+
+    # Training models
+    model_from_a.fit(None, [-1, 0, 1])
+    model_from_b.fit(None, [-1, 0, 1])
 
     # Run some predictions
     print("Running predictions:")
-    int_x = [[1, 2, -3], [10, -9, 4], [22, 5, -2]]
-    float_x = [list(map(float, x_)) for x_ in int_x]
-    print(f"Adapted model from A: x={int_x}, f(x)={model_from_a.predict(int_x)}")
-    print(f"Adapted model from B: x={float_x}, f(x)={model_from_b.predict(float_x)}")
+    x = [[-1, -2, -3], [-5, -9, 1], [0, -1, -2]]
+    print(f"Adapted model from A: x={x}, f(x)={model_from_a.predict(x)}")
+    print(f"Adapted model from B: x={x}, f(x)={model_from_b.predict(x)}")

@@ -78,6 +78,10 @@ cpp-object-pool:
 	@echo "[Makefile] Running C++ Object Pool Pattern sample..."
 	@$(call run_cpp,"./cpp/creational/object_pool.cpp")
 
+cpp-adapter:
+	@echo "[Makefile] Running C++ Adapter Pattern sample..."
+	@$(call run_cpp,"./cpp/structural/adapter.cpp")
+
 java-abstract-factory:
 	@echo "[Makefile] Running Java Abstract Factory Pattern sample..."
 	@$(call run_java,"./java/creational/AbstractFactory.java")
