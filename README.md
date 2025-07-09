@@ -17,6 +17,14 @@
 | <p align='center'>Abstract Factory Pattern<sup>\[1\]</sup></p><p align='center'>[C](./c/creational/abstract_factory.c), [C++](./cpp/creational/abstract_factory.cpp), [Java](./java/creational/AbstractFactory.java), [Python](./python/creational/abstract_factory.py)</p> | <p align='center'>Builder Pattern<sup>\[1\]</sup></p><p align='center'>[C](./c/creational/builder.c), [C++](./cpp/creational/builder.cpp), [Python](./python/creational/builder.py)</p> | <p align='center'>Factory Method Pattern<sup>\[1\]</sup></p><p align='center'>[C++](./cpp/creational/factory_method.cpp), [Python](./python/creational/factory_method.py)</p> | <p align='center'>Prototype Pattern<sup>\[1\]</sup></p><p align='center'>[C++](./cpp/creational/prototype.cpp), [Python](./python/creational/prototype.py)</p> |
 | <p align='center'>Object Pool Pattern<sup>\[2\]</sup></p><p align='center'>[C++](./cpp/creational/object_pool.cpp), [Python](./python/creational/object_pool.py)</p> |
 
+## Structural Patterns
+
+| | | | |
+| --- | --- | --- | --- |
+| <p align='center'>Adapter Pattern<sup>\[1\]</sup></p><p align='center'>[C++](./cpp/structural/adapter.cpp)</p> |
+
+--- 
+
 > **References**
 >
 > \[1\]: Gamma, E., Helm, R., Johnson, R., & Vlissides, J. (1994). **Design patterns: Elements of Reusable Object-Oriented Software**.
