@@ -162,8 +162,8 @@ int main() {
   srand(time(nullptr));
 
   // Initialize concrete handlers
-  SimpleHandler<double> simple_handler{SimpleHandler<double>()};
-  MultiplicationHandler<double> mult_handler{MultiplicationHandler<double>()};
+  SimpleHandler<double> simple_handler;
+  MultiplicationHandler<double> mult_handler;
 
   // Configure order
   simple_handler.set_next(&mult_handler);
@@ -171,6 +171,7 @@ int main() {
   // Set a "main" handler
   BaseHander<MathProblem<double>, double> handler{&simple_handler};
 
+  // Actual solver
   auto solver = [](MathProblem<double> &problem) {
     double a = problem.a, b = problem.b;
     Operation op = problem.op;
