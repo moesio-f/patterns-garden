@@ -94,6 +94,10 @@ cpp-proxy:
 	@echo "[Makefile] Running C++ Proxy Pattern sample..."
 	@$(call run_cpp,"./cpp/structural/proxy.cpp")
 
+cpp-cor:
+	@echo "[Makefile] Running C++ Chain of Responsibility Pattern sample..."
+	@$(call run_cpp,"./cpp/behavioral/chain_of_responsibility.cpp")
+
 java-abstract-factory:
 	@echo "[Makefile] Running Java Abstract Factory Pattern sample..."
 	@$(call run_java,"./java/creational/AbstractFactory.java")

@@ -21,7 +21,13 @@
 
 | | | | |
 | --- | --- | --- | --- |
-| <p align='center'>Adapter Pattern<sup>\[1\]</sup></p><p align='center'>[C++](./cpp/structural/adapter.cpp), [Python](./python/structural/adapter.py)</p> | <p align='center'>Bridge Pattern<sup>\[1\], \[3\]</sup></p><p align='center'>[C++](./cpp/structural/bridge.cpp)</p> | <p align='center'>Flyweight Pattern<sup>\[1\], \[4\]</sup></p><p align='center'>[C++](./cpp/structural/flyweight.cpp)</p> | <p align='center'>Proxy Pattern<sup>\[1\], \[5\]</sup></p><p align='center'>[C++](./cpp/structural/proxy.cpp)</p> |
+| <p align='center'>Adapter Pattern<sup>\[1\]</sup></p><p align='center'>[C++](./cpp/structural/adapter.cpp), [Python](./python/structural/adapter.py)</p> | <p align='center'>Bridge Pattern<sup>\[1\], \[3\]</sup></p><p align='center'>[C++](./cpp/structural/bridge.cpp)</p> | <p align='center'>Flyweight Pattern<sup>\[1\], \[4\]</sup></p><p align='center'>[C++](./cpp/structural/flyweight.cpp)</p> | <p align='center'>Proxy Pattern<sup>\[1\], \[5\]</sup></p><p align='center'>[C++](./cpp/structural/proxy.cpp)</p> 
+
+## Behavioral Patterns
+
+| | | | |
+| --- | --- | --- | --- |
+| <p align='center'>Chain of Responsibility Pattern<sup>\[1\], \[6\]</sup></p><p align='center'>[C++](./cpp/behavioral/chain_of_responsibility.cpp)</p> |
 
 --- 
 
@@ -36,3 +42,5 @@
 > \[4\]: **Flyweight**. https://refactoring.guru/design-patterns/flyweight
 >
 > \[5\]: **Flyweight**. https://refactoring.guru/design-patterns/proxy
+>
+> \[6\]: **Chain of Responsibility**. https://refactoring.guru/design-patterns/chain-of-responsibility
