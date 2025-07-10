@@ -90,6 +90,10 @@ cpp-flyweight:
 	@echo "[Makefile] Running C++ Flywieght Pattern sample..."
 	@$(call run_cpp,"./cpp/structural/flyweight.cpp")
 
+cpp-proxy:
+	@echo "[Makefile] Running C++ Proxy Pattern sample..."
+	@$(call run_cpp,"./cpp/structural/proxy.cpp")
+
 java-abstract-factory:
 	@echo "[Makefile] Running Java Abstract Factory Pattern sample..."
 	@$(call run_java,"./java/creational/AbstractFactory.java")
