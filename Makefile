@@ -106,6 +106,10 @@ cpp-observer:
 	@echo "[Makefile] Running C++ Observer Pattern sample..."
 	@$(call run_cpp,"./cpp/behavioral/observer.cpp")
 
+cpp-active-object:
+	@echo "[Makefile] Running C++ Active Object Pattern sample..."
+	@$(call run_cpp,"./cpp/concurrency/active_object.cpp")
+
 java-abstract-factory:
 	@echo "[Makefile] Running Java Abstract Factory Pattern sample..."
 	@$(call run_java,"./java/creational/AbstractFactory.java")
