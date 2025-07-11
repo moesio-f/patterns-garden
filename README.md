@@ -27,7 +27,7 @@
 
 | | | | |
 | --- | --- | --- | --- |
-| <p align='center'>Chain of Responsibility Pattern<sup>\[1\], \[6\]</sup></p><p align='center'>[C++](./cpp/behavioral/chain_of_responsibility.cpp)</p> | <p align='center'>Fluent Interface Pattern<sup>\[7\]</sup></p><p align='center'>[C++](./cpp/behavioral/fluent_interface.cpp)</p> |
+| <p align='center'>Chain of Responsibility Pattern<sup>\[1\], \[6\]</sup></p><p align='center'>[C++](./cpp/behavioral/chain_of_responsibility.cpp)</p> | <p align='center'>Fluent Interface Pattern<sup>\[7\]</sup></p><p align='center'>[C++](./cpp/behavioral/fluent_interface.cpp)</p> | <p align='center'>Observer Pattern<sup>\[1\], \[8\]</sup></p><p align='center'>[C++](./cpp/behavioral/observer.cpp)</p> |
 
 --- 
 
@@ -46,3 +46,5 @@
 > \[6\]: **Chain of Responsibility**. https://refactoring.guru/design-patterns/chain-of-responsibility
 >
 > \[7\]: **Fluent Interface**. https://martinfowler.com/bliki/FluentInterface.html
+>
+> \[8\]: **Observer**. https://refactoring.guru/design-patterns/observer

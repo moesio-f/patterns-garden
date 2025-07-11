@@ -102,6 +102,10 @@ cpp-fluent-interface:
 	@echo "[Makefile] Running C++ Fluent Interface Pattern sample..."
 	@$(call run_cpp,"./cpp/behavioral/fluent_interface.cpp")
 
+cpp-observer:
+	@echo "[Makefile] Running C++ Observer Pattern sample..."
+	@$(call run_cpp,"./cpp/behavioral/observer.cpp")
+
 java-abstract-factory:
 	@echo "[Makefile] Running Java Abstract Factory Pattern sample..."
 	@$(call run_java,"./java/creational/AbstractFactory.java")
