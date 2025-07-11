@@ -98,6 +98,10 @@ cpp-cor:
 	@echo "[Makefile] Running C++ Chain of Responsibility Pattern sample..."
 	@$(call run_cpp,"./cpp/behavioral/chain_of_responsibility.cpp")
 
+cpp-fluent-interface:
+	@echo "[Makefile] Running C++ Fluent Interface Pattern sample..."
+	@$(call run_cpp,"./cpp/behavioral/fluent_interface.cpp")
+
 java-abstract-factory:
 	@echo "[Makefile] Running Java Abstract Factory Pattern sample..."
 	@$(call run_java,"./java/creational/AbstractFactory.java")

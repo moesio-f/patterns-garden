@@ -27,7 +27,7 @@
 
 | | | | |
 | --- | --- | --- | --- |
-| <p align='center'>Chain of Responsibility Pattern<sup>\[1\], \[6\]</sup></p><p align='center'>[C++](./cpp/behavioral/chain_of_responsibility.cpp)</p> |
+| <p align='center'>Chain of Responsibility Pattern<sup>\[1\], \[6\]</sup></p><p align='center'>[C++](./cpp/behavioral/chain_of_responsibility.cpp)</p> | <p align='center'>Fluent Interface Pattern<sup>\[7\]</sup></p><p align='center'>[C++](./cpp/behavioral/fluent_interface.cpp)</p> |
 
 --- 
 
@@ -44,3 +44,5 @@
 > \[5\]: **Flyweight**. https://refactoring.guru/design-patterns/proxy
 >
 > \[6\]: **Chain of Responsibility**. https://refactoring.guru/design-patterns/chain-of-responsibility
+>
+> \[7\]: **Fluent Interface**. https://martinfowler.com/bliki/FluentInterface.html
