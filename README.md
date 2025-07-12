@@ -33,7 +33,7 @@
 
 | | | | |
 | --- | --- | --- | --- |
-| <p align='center'>Active Object Pattern<sup>\[9\]</sup></p><p align='center'>[C++](./cpp/concurrency/active_object.cpp)</p> | 
+| <p align='center'>Active Object Pattern<sup>\[9\]</sup></p><p align='center'>[C++](./cpp/concurrency/active_object.cpp)</p> | <p align='center'>Thread Pool Pattern<sup>\[9\]</sup></p><p align='center'>[C++](./cpp/concurrency/thread_pool.cpp)</p> | 
 
 --- 
 
@@ -56,3 +56,4 @@
 > \[8\]: **Observer**. https://refactoring.guru/design-patterns/observer
 >
 > \[9\]: Buschmann, F., Schmidt, D. C., Stal, M., & Rohnert, H. (2000). **Pattern-orientated software architecture: Patterns for concurrent and distributed objects v. 2**.
+> \[10\]: **Thread pool**. https://en.wikipedia.org/wiki/Thread_pool

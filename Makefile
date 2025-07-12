@@ -110,6 +110,10 @@ cpp-active-object:
 	@echo "[Makefile] Running C++ Active Object Pattern sample..."
 	@$(call run_cpp,"./cpp/concurrency/active_object.cpp")
 
+cpp-thread-pool:
+	@echo "[Makefile] Running C++ Thread Pool Pattern sample..."
+	@$(call run_cpp,"./cpp/concurrency/thread_pool.cpp")
+
 java-abstract-factory:
 	@echo "[Makefile] Running Java Abstract Factory Pattern sample..."
 	@$(call run_java,"./java/creational/AbstractFactory.java")
